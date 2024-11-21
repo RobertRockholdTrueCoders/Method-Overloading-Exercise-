@@ -32,7 +32,16 @@
         
         static void Main(string[] args)
         {
-            Console.WriteLine(Add(1,1, false));
+            Console.WriteLine(Add(1,0, true));
+            var x = 1;
+            var y = 2;
+            var answer = Add(x, y);
+
+            var a = 5.2m;
+            var b = 2.0m;
+            var decimalAnswer = Add(a, b);
+
+            Console.WriteLine($"int addition: {answer}, decimal addition: {decimalAnswer}");
         }
     }
 }
